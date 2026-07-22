@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio | Full-Stack Developer & 3D Artist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-black">
+
+    <!-- 1. NAVIGATION -->
+    <nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center font-black text-slate-950 text-xl shadow-lg shadow-cyan-500/20">DEV</div>
+                <span class="font-extrabold text-lg tracking-wider text-white uppercase">YOUR NAME</span>
+            </div>
+            <div class="hidden md:flex gap-8 font-semibold text-sm text-slate-400">
+                <a href="#home" class="hover:text-cyan-400 transition-colors">Home</a>
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+            </div>
+            <a href="#contact" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition-all shadow-md shadow-cyan-500/20">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-4xl mx-auto text-center z-10">
+            <span class="bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs px-4 py-1.5 rounded-full font-bold tracking-widest uppercase mb-6 inline-block">Full-Stack Developer & 3D Creator</span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight">
+                Hi, I'm <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-500">YOUR NAME</span> 👋
+            </h1>
+            <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+                I build modern full-stack web applications, integrate smart AI capabilities, and design immersive 3D art and animations.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#projects" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-extrabold px-8 py-3.5 rounded-lg transition-all flex items-center gap-2 shadow-lg shadow-cyan-500/10">
+                    View Portfolio <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="#contact" class="border border-slate-700 hover:border-slate-500 bg-slate-900/50 text-white font-semibold px-8 py-3.5 rounded-lg transition-all">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. ABOUT & EXPERTISE -->
+    <section id="about" class="py-24 px-6 border-t border-slate-900 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs text-cyan-400 font-bold uppercase tracking-widest mb-2">What I Do</h2>
+                <h3 class="text-3xl font-extrabold text-white">Combining Logic, Intelligence & Visual Art</h3>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Skill 1 -->
+                <div class="bg-slate-900/40 border border-slate-800 p-8 rounded-2xl hover:border-cyan-500/40 transition-all group">
+                    <div class="w-12 h-12 bg-cyan-500/10 text-cyan-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="code-2" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">MERN Web Apps</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Building modern, fast, and scalable full-stack web platforms with React, Node.js, Express, and MongoDB.</p>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="bg-slate-900/40 border border-slate-800 p-8 rounded-2xl hover:border-blue-500/40 transition-all group">
+                    <div class="w-12 h-12 bg-blue-500/10 text-blue-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="cpu" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">AI Integrations</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Integrating OpenAI APIs and smart AI workflows to add automated intelligence to web products.</p>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="bg-slate-900/40 border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/40 transition-all group">
+                    <div class="w-12 h-12 bg-indigo-500/10 text-indigo-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="box" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">3D Art & Animation</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Designing 3D models, cinematic renders, and visual assets using Blender for media and websites.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. TECH STACK -->
+    <section id="skills" class="py-20 px-6 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-xs text-cyan-400 font-bold uppercase tracking-widest mb-2">Technologies</h2>
+            <h3 class="text-2xl font-bold text-white mb-10">Tools & Skills</h3>
+            <div class="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
+                <span class="bg-slate-900 border border-slate-800 text-slate-300 font-medium text-sm px-5 py-2.5 rounded-xl">JavaScript (ES6+)</span>
+                <span class="bg-slate-900 border border-slate-800 text-slate-300 font-medium text-sm px-5 py-2.5 rounded-xl">React.js</span>
+                <span class="bg-slate-900 border border-slate-800 text-slate-300 font-medium text-sm px-5 py-2.5 rounded-xl">Node.js</span>
+                <span class="bg-slate-900 border border-slate-800 text-slate-300 font-medium text-sm px-5 py-2.5 rounded-xl">Express.js</span>
+                <span class="bg-slate-900 border border-slate-800 text-slate-300 font-medium text-sm px-5 py-2.5 rounded-xl">MongoDB</span>
+                <span class="bg-slate-900 border border-slate-800 text-slate-300 font-medium text-sm px-5 py-2.5 rounded-xl">Tailwind CSS</span>
+                <span class="bg-slate-900 border border-slate-800 text-slate-300 font-medium text-sm px-5 py-2.5 rounded-xl">Python</span>
+                <span class="bg-slate-900 border border-slate-800 text-slate-300 font-medium text-sm px-5 py-2.5 rounded-xl">OpenAI API</span>
+                <span class="bg-slate-900 border border-slate-800 text-slate-300 font-medium text-sm px-5 py-2.5 rounded-xl">Blender 3D</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FEATURED PROJECTS -->
+    <section id="projects" class="py-24 px-6 border-t border-slate-900 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs text-cyan-400 font-bold uppercase tracking-widest mb-2">My Work</h2>
+                <h3 class="text-3xl font-extrabold text-white">Featured Projects</h3>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group hover:border-cyan-500/40 transition-all">
+                    <div class="p-8">
+                        <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Full-Stack & AI</span>
+                        <h4 class="text-2xl font-bold text-white mt-2 mb-3">AI Tourism Platform</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">A smart web application designed for Sri Lankan tourism, featuring AI-generated travel itineraries and interactive destination recommendations.</p>
+                        <div class="flex gap-2 font-mono text-xs text-slate-500">
+                            <span>#React</span> <span>#Nodejs</span> <span>#OpenAI</span> <span>#MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group hover:border-blue-500/40 transition-all">
+                    <div class="p-8">
+                        <span class="text-xs font-bold text-blue-400 uppercase tracking-wider">Corporate Web</span>
+                        <h4 class="text-2xl font-bold text-white mt-2 mb-3">Engineering Corporate Site</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">A fully responsive, high-performance corporate platform designed for an industrial electrical & engineering enterprise.</p>
+                        <div class="flex gap-2 font-mono text-xs text-slate-500">
+                            <span>#React</span> <span>#TailwindCSS</span> <span>#Vercel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CONTACT -->
+    <section id="contact" class="py-20 px-6 border-t border-slate-900">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-extrabold text-white mb-4">Let's Connect & Build</h2>
+            <p class="text-slate-400 mb-8 max-w-md mx-auto">Have a project idea, web application request, or collaboration in mind? Feel free to reach out.</p>
+            <a href="mailto:your-email@gmail.com" class="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-lg shadow-cyan-500/20 hover:opacity-90 transition-opacity">
+                <i data-lucide="mail" class="w-5 h-5"></i> Send Me an Email
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 text-center text-slate-600 text-xs border-t border-slate-900">
+        <p>© 2026 YOUR NAME. Built with HTML, Tailwind CSS & Hosted on Vercel.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
